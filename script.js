@@ -1,7 +1,7 @@
 const projects = [
   {
     name: "Séjour Médical",
-    image: "https://www.mh-digital-solution.com/wp-content/uploads/2023/05/sejourmedical.jpg",
+    image: "img/sejour.png",
     url: "https://www.sejour-medical.fr/"
   },
   {
@@ -11,7 +11,7 @@ const projects = [
   },
   {
     name: "Histoire Zen",
-    image: "https://www.mh-digital-solution.com/wp-content/uploads/2023/06/histoirezen.jpg",
+    image: "img/hist.webp",
     url: "https://www.histoire-zen.fr/"
   },
   {
