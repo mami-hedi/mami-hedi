@@ -178,3 +178,27 @@ footer {
     height: 220px;
   }
 }
+.lang-switcher {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background: #f5f7fa;
+}
+
+.lang-flag {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lang-flag:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.lang-flag.active {
+  border: 2px solid #f97316;
+}
