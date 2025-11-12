@@ -6,7 +6,7 @@ const projects = [
   },
   {
     name: "Gem by Gwenaelle",
-    image: "https://www.mh-digital-solution.com/wp-content/uploads/2023/06/gem.jpg",
+    image: "https://cdn-ildokec.nitrocdn.com/CjqSBgyqnASARKUDqqEfnftyEdcuXVky/assets/images/optimized/rev-0c5dc04/www.mh-digital-solution.com/wp-content/uploads/2025/08/gemb.png",
     url: "https://www.gembygwenaelle.fr/"
   },
   {
