@@ -1,8 +1,8 @@
 const projects = [
   {
-    name: "Séjour Médical",
-    image: "img/sejour.png",
-    url: "https://www.sejour-medical.fr/"
+    name: "mylieu",
+    image: "img/LOGO-MYLIEU.webp",
+    url: "https://www.mylieu.fr/"
   },
   {
     name: "Gem by Gwenaelle",
@@ -16,18 +16,40 @@ const projects = [
   },
   {
     name: "Petits Pieds Grand Pas",
-    image: "https://www.mh-digital-solution.com/wp-content/uploads/2023/07/petits.jpg",
+    image: "img/pauli.webp",
     url: "https://petitspiedsgrandpas.com/"
   },
   {
     name: "Clothilde Valade",
-    image: "https://www.mh-digital-solution.com/wp-content/uploads/2023/08/clothilde.jpg",
+    image: "img/clothlide.webp",
     url: "https://www.clothildevalade.com/"
   },
   {
     name: "Fleurs d’Harmonie",
-    image: "https://www.mh-digital-solution.com/wp-content/uploads/2023/09/fleurs.jpg",
+    image: "img/fleurs.webp",
     url: "https://fleursdharmonie.com/"
+  },
+  {
+    name: "gilles ravary",
+    image: "img/Gilles-Ravary-logo.webp",
+    url: "https://gilles-ravary.fr/"
+  },
+  {
+    name: "Le Clos Lacam",
+    image: "img/closlacam-logo-1536x928.webp",
+    url: "https://www.closlacam.fr/"
+  },
+  {
+    
+    name: "Séjour Médical",
+    image: "img/sejour.png",
+    url: "https://www.sejour-medical.fr/"
+  },
+  {
+    
+    name: "MH Digital Solution",
+    image: "img/Logo-mh.webp",
+    url: "https://www.mh-digital-solution.com/"
   },
 ];
 
