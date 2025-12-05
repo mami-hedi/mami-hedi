@@ -85,9 +85,12 @@ section h2 {
 .project img {
   width: 100%;
   height: auto;
-  display: block;
-  object-fit: cover;
+  max-height: 200px; /* empêche les images trop hautes */
+  object-fit: contain; /* évite toute déformation */
+  background: #fff;
+  padding: 10px;
 }
+
 
 /* TITRE */
 .project h3 {
