@@ -113,6 +113,13 @@ section h2 {
     grid-template-columns: 1fr; /* 1 colonne */
   }
 }
+/* 📱 Téléphone compact : meilleure lisibilité */
+@media (max-width: 500px) {
+  #project-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
 
 
 
