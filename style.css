@@ -56,38 +56,46 @@ section h2 {
   color: #002147;
 }
 
-.projects {
+/* SECTION RÉALISATIONS — VERSION 100% RESPONSIVE */
+
+/* Conteneur des projets */
+#project-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ✅ 2 colonnes fixes */
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes desktop */
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-
+/* Carte d’un projet */
 .project {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .project:hover {
   transform: translateY(-5px);
 }
 
+/* Images responsive */
 .project img {
-  
-  height: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
 }
 
+/* TITRE */
 .project h3 {
   margin: 15px 0;
   color: #f97316;
 }
 
+/* Bouton */
 .project a {
   display: inline-block;
   margin-bottom: 15px;
@@ -96,28 +104,13 @@ section h2 {
   font-weight: 600;
 }
 
-/* Conteneur de tes projets */
-#project-list {
-  display: flex;
-  flex-wrap: wrap; /* pour permettre le passage à la ligne si besoin */
-  gap: 20px; /* espace entre projets — ajuste selon besoin */
-}
-
-/* Style pour chaque projet (les items que JS injecte) */
-#project-list .project {  /* remplace .project par la classe réelle de chaque item */ 
-  flex: 1 1 30%; /* 30% de largeur par défaut → 3 par ligne environ */
-  /* ou adapte selon le design souhaité */
-}
-
-/* Pour mobile : empiler les projets */
+/* 📱 Mode Mobile : 1 colonne */
 @media (max-width: 768px) {
   #project-list {
-    flex-direction: column;
-  }
-  #project-list .project {
-    flex: 1 1 100%;  /* chaque projet prend 100% largeur — 1 par ligne */
+    grid-template-columns: 1fr; /* 1 colonne */
   }
 }
+
 
 
 
