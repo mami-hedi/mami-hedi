@@ -96,6 +96,28 @@ section h2 {
   font-weight: 600;
 }
 
+/* Conteneur de tes projets */
+#project-list {
+  display: flex;
+  flex-wrap: wrap; /* pour permettre le passage à la ligne si besoin */
+  gap: 20px; /* espace entre projets — ajuste selon besoin */
+}
+
+/* Style pour chaque projet (les items que JS injecte) */
+#project-list .project {  /* remplace .project par la classe réelle de chaque item */ 
+  flex: 1 1 30%; /* 30% de largeur par défaut → 3 par ligne environ */
+  /* ou adapte selon le design souhaité */
+}
+
+/* Pour mobile : empiler les projets */
+@media (max-width: 768px) {
+  #project-list {
+    flex-direction: column;
+  }
+  #project-list .project {
+    flex: 1 1 100%;  /* chaque projet prend 100% largeur — 1 par ligne */
+  }
+}
 
 
 
