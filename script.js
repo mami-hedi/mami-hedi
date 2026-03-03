@@ -10,11 +10,11 @@ const projects = [
   // ======= ANCIENS (WordPress / sites) =======
   { name: "mylieu", image: "img/LOGO-MYLIEU.webp", url: "https://www.mylieu.fr/", tags: ["WordPress"] },
   { name: "Gem by Gwenaelle", image: "img/gemb.webp", url: "https://www.gembygwenaelle.fr/", tags: ["WordPress"] },
-  { name: "Histoire Zen", image: "img/hist.webp", url: "https://www.histoire-zen.fr/", tags: ["WordPress"] },
+  
   { name: "Petits Pieds Grand Pas", image: "img/pauli.webp", url: "https://petitspiedsgrandpas.com/", tags: ["WordPress"] },
   { name: "Clothilde Valade", image: "img/clothlide.webp", url: "https://www.clothildevalade.com/", tags: ["WordPress"] },
   { name: "Fleurs d’Harmonie", image: "img/fleurs.webp", url: "https://fleursdharmonie.com/", tags: ["WordPress"] },
-  { name: "Gilles Ravary", image: "img/Gilles-Ravary-logo.webp", url: "https://gilles-ravary.fr/", tags: ["WordPress"] },
+  
   { name: "Le Clos Lacam", image: "img/closlacam-logo-1536x928.webp", url: "https://www.closlacam.fr/", tags: ["WordPress"] },
   { name: "Séjour Médical", image: "img/sejour.png", url: "https://www.sejour-medical.fr/", tags: ["WordPress"] },
   { name: "MH Digital Solution", image: "img/Logo-mh.webp", url: "https://www.mh-digital-solution.com/", tags: ["WordPress", "Agency"] },
