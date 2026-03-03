@@ -1,88 +1,299 @@
 <!DOCTYPE html>
-<html lang="fr">
-<div class="lang-switcher">
-  <a href="index.html"><img src="img/fr.png" alt="Français" class="lang-flag"></a>
-  <a href="index-en.html"><img src="img/en.png" alt="English" class="lang-flag active"></a>
-</div>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hedi Mami - Développeur Web</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome pour icônes -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hedi Mami — Full-Stack Web Developer</title>
 
-</head>
-<body>
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Hedi Mami, full-stack web developer specialized in WordPress, Odoo, ReactJS, NodeJS, Express, TypeScript, JavaScript, MySQL. Available for remote work."
+    />
+    <meta name="theme-color" content="#0b1220" />
 
-  <!-- Section d’en-tête -->
-  <header>
-    <h1>Hedi Mami</h1>
-    <p>Full-Stack Web Developer specialized in WordPress & Odoo</p>
-    <a href="#realisations" class="btn">View my projects</a>
-  </header>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Section À propos -->
-<section id="about">
-  <h2>About Me</h2>
-  <div class="about-container reverse">
-    <div class="about-text">
-      <p>
-  My name is <strong>Hedi Mami</strong>, a full-stack web developer passionate about creating custom digital solutions.  
-  For over <strong>3 years</strong>, I have been helping businesses, freelancers, and brands design modern, high-performance, and scalable websites.
-</p>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<p>
-  Specialized in <strong>WordPress</strong> (showcase websites, e-commerce with WooCommerce) and <strong>Odoo</strong> (ERP, business management, production),
-  I handle the full development of your projects, from design to deployment.
-</p>
-
-<p>
-  My goal: to provide each client with an online presence that perfectly reflects their identity and ambitions.
-</p>
-
-
-      
+  <body>
+    <!-- Language switcher -->
+    <div class="lang-switcher">
+      <a href="index.html" aria-label="French"
+        ><img src="img/fr.png" alt="French" class="lang-flag"
+      /></a>
+      <a href="index-en.html" aria-label="English"
+        ><img src="img/en.png" alt="English" class="lang-flag active"
+      /></a>
     </div>
-    <div class="about-image">
-      <img src="img/hedi-mami.png" alt="Hedi Mami - Développeur Web">
-    </div>
-  </div>
-</section>
 
+    <!-- Header -->
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="pill">
+            <i class="fa-solid fa-code"></i> Full-Stack Web Developer
+          </p>
+          <h1>Hedi Mami</h1>
+          <p class="subtitle">
+            WordPress • Odoo • ReactJS • NodeJS • Express • TypeScript •
+            JavaScript • MySQL
+          </p>
 
+          <div class="hero-cta">
+            <a href="#realisations" class="btn primary"
+              ><i class="fa-solid fa-briefcase"></i> View my work</a
+            >
+            <a href="#contact" class="btn ghost"
+              ><i class="fa-solid fa-paper-plane"></i> Contact me</a
+            >
+          </div>
 
-  <!-- Section Réalisations -->
-  <section id="realisations">
-    <h2>My projects</h2>
-    <div class="projects" id="project-list">
-      <!-- Projets chargés par JS -->
-    </div>
-  </section>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">years of experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Full-Stack</span>
+              <span class="stat-label">Web & ERP</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Remote</span>
+              <span class="stat-label">France & Worldwide</span>
+            </div>
+          </div>
+        </div>
 
-  <!-- Section Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Based in Tunisia — available for remote work in France and worldwide 🌍</p>
-    <p>📞 <a href="tel:+21658146177">+216 58 146 177</a></p>
-    <p>📧 <a href="mailto:hedimemi@gmail.com">hedimemi@gmail.com</a></p>
-    <div class="socials">
-    <a href="https://www.linkedin.com/in/hedi-mami" target="_blank" class="social-icon">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="https://www.mh-digital-solution.com" target="_blank" class="social-icon">
-      <i class="fas fa-globe"></i> My website
-    </a>
-  </div>
-  </section>
+        <div class="hero-card">
+          <div class="avatar-wrap">
+            <img
+              src="img/hedi-mami.png"
+              alt="Hedi Mami - Web Developer"
+              class="avatar"
+              loading="lazy"
+            />
+          </div>
+          <div class="hero-card-content">
+            <h2>Available for remote work</h2>
+            <p>
+              WordPress websites (business / WooCommerce), Odoo (ERP) integrations,
+              and modern applications (React + Node).
+            </p>
+            <a class="mini-link" href="#contact"
+              >Quick contact <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  <footer>
-    <p>© 2025 Hedi Mami — Personal Portfolio</p>
-  </footer>
+    <main>
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>About</h2>
+            <p>
+              Tailor-made digital solutions: performance, SEO, scalability, and
+              user experience.
+            </p>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <div class="about-grid">
+            <div class="card">
+              <h3>Who I am</h3>
+              <p>
+                My name is <strong>Hedi Mami</strong>, a full-stack web developer
+                passionate about building tailor-made digital solutions. For more
+                than <strong>3 years</strong>, I’ve been helping companies,
+                freelancers, and brands design modern, high-performance, and
+                scalable websites.
+              </p>
+              <p>
+                Specialized in <strong>WordPress</strong> (business websites,
+                e-commerce with WooCommerce) and <strong>Odoo</strong> (ERP,
+                sales management, production), I deliver end-to-end development
+                for your projects—from design to deployment.
+              </p>
+              <p>
+                I also work with modern technologies such as <strong>ReactJS</strong>,
+                <strong>NodeJS</strong>, <strong>Express</strong>,
+                <strong>TypeScript</strong>, <strong>JavaScript</strong>, and
+                <strong>MySQL</strong> to build dynamic, high-performance, and
+                secure web applications.
+              </p>
+              <p class="muted">
+                My goal: to provide each client with an online presence that
+                truly reflects their identity and ambitions.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Skills</h3>
+              <div class="chips" id="skills">
+                <!-- Injected by JS -->
+              </div>
+
+              <div class="divider"></div>
+
+              <h3>Services</h3>
+              <ul class="checklist">
+                <li>
+                  <i class="fa-solid fa-check"></i> WordPress websites (Elementor,
+                  custom, WooCommerce)
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Odoo integration (ERP,
+                  modules, workflows)
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> React apps + Node/Express APIs
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Technical SEO & performance
+                  (Core Web Vitals)
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Maintenance & security
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="realisations" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>My work</h2>
+            <p>
+              A selection of projects: websites, landing pages, and web applications.
+            </p>
+          </div>
+
+          <div class="toolbar">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="Search a project (e.g., React, WordPress...)"
+                aria-label="Search a project"
+              />
+            </div>
+
+            <div class="filters" id="filters">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+          <div class="projects" id="project-list" aria-live="polite">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>Based in Tunisia — available for remote work.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card contact-card">
+              <p class="contact-line">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>📍 Tunisia — Remote (France & Worldwide)</span>
+              </p>
+              <p class="contact-line">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+21658146177">+216 58 146 177</a>
+              </p>
+              <p class="contact-line">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:hedimemi@gmail.com">hedimemi@gmail.com</a>
+              </p>
+
+              <div class="socials">
+                <a
+                  href="https://www.linkedin.com/in/hedi-mami"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="social-icon"
+                >
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+
+                <a
+                  href="https://www.mh-digital-solution.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="social-icon"
+                >
+                  <i class="fas fa-globe"></i> My website
+                </a>
+              </div>
+
+              <div class="divider"></div>
+
+              <a
+                class="btn primary full"
+                href="mailto:hedimemi@gmail.com?subject=Quote%20request%20-%20Web%20project"
+              >
+                <i class="fa-solid fa-envelope-open-text"></i> Request a quote
+              </a>
+            </div>
+
+            <div class="card">
+              <h3>Quick info</h3>
+              <ul class="info-list">
+                <li>
+                  <span class="label">Stack</span>
+                  <span class="value">WordPress / Odoo / React / Node</span>
+                </li>
+                <li>
+                  <span class="label">Backend</span>
+                  <span class="value">Express, TypeScript, REST APIs</span>
+                </li>
+                <li>
+                  <span class="label">Database</span>
+                  <span class="value">MySQL</span>
+                </li>
+                <li>
+                  <span class="label">Availability</span>
+                  <span class="value">Remote</span>
+                </li>
+              </ul>
+
+              <p class="muted">
+                Send me a message with your needs (website/app type, features,
+                deadline, budget).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Hedi Mami — Personal portfolio</p>
+        <a href="#top" class="backtop"
+          ><i class="fa-solid fa-arrow-up"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
