@@ -1,55 +1,99 @@
-# Portfolio Personnel - Hedi Mami
+🚀 Hedi Mami — Full-Stack Web Developer Portfolio
 
-Bienvenue sur mon **portfolio personnel** !  
-Je suis **Hedi Mami**, développeur web full-stack spécialisé en **WordPress** et **Odoo**, basé en Tunisie et disponible en télétravail pour la France et dans le monde entier.
+Welcome to my personal portfolio website.
 
----
+I’m Hedi Mami, a Full-Stack Web Developer specialized in WordPress, Odoo, ReactJS, and NodeJS, based in Tunisia and available for remote work worldwide.
 
-## 🚀 À propos du site
+This portfolio showcases my technical expertise, selected projects, and the digital solutions I build for businesses and entrepreneurs.
 
-Ce site présente mes réalisations professionnelles, mes compétences et mes services. Il a été développé en **HTML, CSS et JavaScript** et met en avant :
+🌐 About This Website
 
-- Mes projets WordPress (sites vitrines et e-commerce avec WooCommerce)
-- Mes projets Odoo (ERP, gestion commerciale et production)
-- Une navigation simple et responsive pour une expérience utilisateur optimale
+This portfolio presents:
 
----
+💼 Professional WordPress projects (business websites & WooCommerce e-commerce)
 
-## 🖥️ Technologies utilisées
+⚙️ Odoo ERP integrations (sales management, production workflows)
 
-- HTML5 & CSS3
-- JavaScript (vanilla JS)
-- Flexbox & CSS Grid pour la mise en page
-- Git & GitHub pour le versioning
-- GitHub Pages pour l’hébergement en ligne
+⚛️ Modern web applications built with ReactJS & NodeJS
 
----
+📱 A fully responsive and performance-optimized interface
 
-## 📂 Contenu du projet
+🔍 Search and filter functionality for project exploration
 
-- `index.html` – Page principale (Français)
-- `index-en.html` – Page en anglais
-- `style.css` – Feuille de style globale
-- `script.js` – Gestion dynamique des projets et switch langue
-- `img/` – Dossier contenant toutes les images du portfolio
+The website is designed with a clean UI, smooth navigation, and strong emphasis on performance and user experience.
 
----
+🛠️ Tech Stack
+Frontend
 
-## 🌍 Accès en ligne
+HTML5
 
-Vous pouvez consulter le site en ligne ici :  
-[https://mami-hedi.github.io/mami-hedi/](https://mami-hedi.github.io/mami-hedi/)
+CSS3 (Flexbox & Grid)
 
----
+JavaScript (Vanilla JS)
 
-## 🔗 Liens utiles
+Responsive Design
 
-- [LinkedIn](https://www.linkedin.com/in/hedi-mami/)  
-- [MH Digital Solution](https://www.mh-digital-solution.com/)
+Backend & Full-Stack Skills
 
----
+WordPress (Custom themes, Elementor, WooCommerce)
 
-## 📝 License
+Odoo (ERP customization & integration)
 
-Ce projet est libre d’utilisation à des fins personnelles ou professionnelles.  
-Merci de me contacter pour toute réutilisation commerciale.
+ReactJS
+
+NodeJS & Express
+
+TypeScript
+
+MySQL
+
+Tools & Deployment
+
+Git & GitHub
+
+GitHub Pages
+
+Vercel (for React deployments)
+
+📁 Project Structure
+
+index.html – French version
+
+index-en.html – English version
+
+style.css – Global styles
+
+script.js – Dynamic project rendering & filtering
+
+img/ – Portfolio assets and images
+
+🌍 Live Website
+
+You can view the live portfolio here:
+
+👉 https://mami-hedi.github.io/mami-hedi/
+
+🔗 Professional Links
+
+💼 LinkedIn: https://www.linkedin.com/in/hedi-mami/
+
+🌐 Agency Website: https://www.mh-digital-solution.com/
+
+📬 Work With Me
+
+I help businesses build:
+
+High-performance WordPress websites
+
+Custom ERP solutions with Odoo
+
+Modern React & Node web applications
+
+SEO-optimized and scalable digital platforms
+
+Available for freelance projects and long-term remote collaboration.
+
+📄 License
+
+This project is open for personal inspiration and professional reference.
+For commercial reuse or template adaptation, please contact me directly.
