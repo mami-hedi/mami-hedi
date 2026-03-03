@@ -22,14 +22,14 @@ const projects = [
   // ======= NOUVEAUX (React / Vercel) =======
   {
     name: "Dar Mamie Dida",
-    image: "img/dar-mamie-dida.png", // tu peux changer le nom du fichier image
+    image: "img/dar-mamie-dida.PNG", // tu peux changer le nom du fichier image
     url: "https://dar-mamie-dida.vercel.app/",
     description: "Site moderne développé avec ReactJS (UI responsive).",
     tags: ["ReactJS", "Vercel"]
   },
   {
     name: "Darb B",
-    image: "img/darb-b.png", // tu peux changer le nom du fichier image
+    image: "img/darb-b.PNG", // tu peux changer le nom du fichier image
     url: "https://darb-b.vercel.app/",
     description: "Application web moderne (React) déployée sur Vercel.",
     tags: ["ReactJS", "Vercel"]
