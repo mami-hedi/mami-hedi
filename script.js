@@ -17,7 +17,7 @@ const projects = [
   
   { name: "Le Clos Lacam", image: "img/closlacam-logo-1536x928.webp", url: "https://www.closlacam.fr/", tags: ["WordPress"] },
   { name: "Séjour Médical", image: "img/sejour.png", url: "https://www.sejour-medical.fr/", tags: ["WordPress"] },
-  { name: "MH Digital Solution", image: "img/Logo-mh.webp", url: "https://www.mh-digital-solution.com/", tags: ["WordPress", "Agency"] },
+  { name: "MH Digital Solution", image: "img/mh.PNG", url: "https://www.mh-digital-solution.com/", tags: ["WordPress", "Agency"] },
 
   // ======= NOUVEAUX (React / Vercel) =======
   {
