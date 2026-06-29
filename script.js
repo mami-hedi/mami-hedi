@@ -10,11 +10,11 @@ const projects = [
   // ======= ANCIENS (WordPress / sites) =======
   { name: "mylieu", image: "img/LOGO-MYLIEU.webp", url: "https://www.mylieu.fr/", tags: ["WordPress"] },
   { name: "Gem by Gwenaelle", image: "img/gemb.webp", url: "https://www.gembygwenaelle.fr/", tags: ["WordPress"] },
-  
+
   { name: "Petits Pieds Grand Pas", image: "img/pauli.webp", url: "https://petitspiedsgrandpas.com/", tags: ["WordPress"] },
   { name: "Clothilde Valade", image: "img/clothlide.webp", url: "https://www.clothildevalade.com/", tags: ["WordPress"] },
   { name: "Fleurs d’Harmonie", image: "img/fleurs.webp", url: "https://fleursdharmonie.com/", tags: ["WordPress"] },
-  
+
   { name: "Le Clos Lacam", image: "img/closlacam-logo-1536x928.webp", url: "https://www.closlacam.fr/", tags: ["WordPress"] },
   { name: "Séjour Médical", image: "img/se.PNG", url: "https://www.sejour-medical.fr/", tags: ["WordPress"] },
   { name: "MH Digital Solution", image: "img/mh.PNG", url: "https://www.mh-digital-solution.com/", tags: ["WordPress", "Agency"] },
@@ -22,14 +22,14 @@ const projects = [
   // ======= NOUVEAUX (React / Vercel) =======
   {
     name: "Dar Mamie Dida",
-    image: "img/dar-mamie-dida.PNG", // tu peux changer le nom du fichier image
+    image: "img/dar-mamie-dida.PNG",
     url: "https://dar-mamie-dida.vercel.app/",
     description: "Site moderne développé avec ReactJS (UI responsive).",
     tags: ["ReactJS", "Vercel"]
   },
   {
     name: "Darb B",
-    image: "img/darb-b.PNG", // tu peux changer le nom du fichier image
+    image: "img/darb-b.PNG",
     url: "https://darb-b.vercel.app/",
     description: "Application web moderne (React) déployée sur Vercel.",
     tags: ["ReactJS", "Vercel"]
@@ -83,62 +83,42 @@ function injectControls() {
 
   const wrapper = document.createElement("div");
   wrapper.id = "portfolio-controls";
-  wrapper.style.display = "flex";
-  wrapper.style.gap = "12px";
-  wrapper.style.flexWrap = "wrap";
-  wrapper.style.alignItems = "center";
-  wrapper.style.margin = "14px 0";
+  wrapper.classList.add("toolbar");
 
   // Search
-  const search = document.createElement("input");
-  search.type = "search";
-  search.placeholder = "Rechercher un projet (ex: React, WordPress...)";
-  search.setAttribute("aria-label", "Rechercher un projet");
-  search.style.flex = "1 1 260px";
-  search.style.padding = "12px 14px";
-  search.style.borderRadius = "999px";
-  search.style.border = "1px solid rgba(255,255,255,.12)";
-  search.style.background = "rgba(0,0,0,.2)";
-  search.style.color = "inherit";
-  search.style.outline = "none";
+  const search = document.createElement("div");
+  search.classList.add("search");
+  search.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i>`;
+
+  const searchInput = document.createElement("input");
+  searchInput.type = "search";
+  searchInput.placeholder = "Rechercher un projet (ex: React, WordPress...)";
+  searchInput.setAttribute("aria-label", "Rechercher un projet");
+  search.appendChild(searchInput);
 
   // Filters container
   const filters = document.createElement("div");
-  filters.style.display = "flex";
-  filters.style.gap = "8px";
-  filters.style.flexWrap = "wrap";
+  filters.classList.add("filters");
 
   tags.forEach((t, idx) => {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.textContent = t;
     btn.dataset.tag = t;
-
-    // Style minimal (utilise ton CSS si tu veux)
-    btn.style.cursor = "pointer";
-    btn.style.padding = "10px 12px";
-    btn.style.borderRadius = "999px";
-    btn.style.border = "1px solid rgba(255,255,255,.12)";
-    btn.style.background = idx === 0 ? "rgba(45,107,255,.25)" : "rgba(255,255,255,.05)";
-    btn.style.color = "inherit";
-    btn.style.fontWeight = "700";
-    btn.style.fontSize = "13px";
+    btn.classList.add("filter-btn");
+    if (idx === 0) btn.classList.add("active");
 
     btn.addEventListener("click", () => {
       state.tag = t;
-      [...filters.querySelectorAll("button")].forEach((b) => {
-        b.style.background = "rgba(255,255,255,.05)";
-        b.style.borderColor = "rgba(255,255,255,.12)";
-      });
-      btn.style.background = "rgba(45,107,255,.25)";
-      btn.style.borderColor = "rgba(45,107,255,.6)";
+      [...filters.querySelectorAll("button")].forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
       renderProjects();
     });
 
     filters.appendChild(btn);
   });
 
-  search.addEventListener("input", (e) => {
+  searchInput.addEventListener("input", (e) => {
     state.query = e.target.value || "";
     renderProjects();
   });
@@ -160,12 +140,8 @@ function renderProjects() {
 
   if (filtered.length === 0) {
     const empty = document.createElement("div");
+    empty.classList.add("empty");
     empty.textContent = "Aucun projet ne correspond à votre recherche.";
-    empty.style.padding = "18px";
-    empty.style.border = "1px dashed rgba(255,255,255,.2)";
-    empty.style.borderRadius = "14px";
-    empty.style.color = "rgba(233,238,252,.72)";
-    empty.style.gridColumn = "1 / -1";
     projectList.appendChild(empty);
     return;
   }
@@ -182,12 +158,19 @@ function renderProjects() {
 
     const descHtml = p.description ? `<p class="project-desc">${escapeHtml(p.description)}</p>` : "";
 
+    // Markup aligné avec le CSS : .project-media (image) + .project-body (texte/actions)
     card.innerHTML = `
-      <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" onerror="this.onerror=null;this.src='img/project-placeholder.jpg';">
-      <h3>${escapeHtml(p.name)}</h3>
-      ${descHtml}
-      ${tagsHtml}
-      <a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Visiter le site</a>
+      <div class="project-media">
+        <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.onerror=null;this.src='img/project-placeholder.jpg';">
+      </div>
+      <div class="project-body">
+        <h3>${escapeHtml(p.name)}</h3>
+        ${descHtml}
+        ${tagsHtml}
+        <div class="project-actions">
+          <a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Visiter le site</a>
+        </div>
+      </div>
     `;
 
     projectList.appendChild(card);
