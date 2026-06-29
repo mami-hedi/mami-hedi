@@ -299,7 +299,7 @@ a {
   margin-right: 8px;
 }
 
-/* Toolbar */
+/* Toolbar (injectée par script.js, gardée pour cohérence visuelle) */
 .toolbar {
   display: flex;
   gap: 12px;
@@ -359,7 +359,7 @@ a {
 /* Projects */
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 projets par ligne */
   gap: 14px;
 }
 
@@ -375,7 +375,7 @@ a {
 }
 
 .project-media {
-  height: 170px;
+  height: 110px; /* image réduite (anciennement 170px) */
   background: rgba(0, 0, 0, 0.22);
   border-bottom: 1px solid var(--border);
   position: relative;
@@ -399,13 +399,14 @@ a {
 
 .project h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-.project p {
+.project p,
+.project-desc {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .project-tags {
@@ -415,8 +416,8 @@ a {
 }
 
 .tag {
-  font-size: 12px;
-  padding: 6px 10px;
+  font-size: 11px;
+  padding: 5px 9px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(0, 0, 0, 0.22);
@@ -431,12 +432,12 @@ a {
 .project-actions a {
   flex: 1;
   text-align: center;
-  padding: 10px 12px;
+  padding: 9px 10px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.05);
   font-weight: 800;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .project-actions a:hover {
@@ -545,14 +546,20 @@ a {
     grid-template-columns: 1fr;
   }
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .contact-grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 700px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
   .projects {
     grid-template-columns: 1fr;
   }
